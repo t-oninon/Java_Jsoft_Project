@@ -1,0 +1,17 @@
+package jsoft.ads.basic;
+
+import java.sql.*;
+package jsoft.objects.*;
+
+public interface Basic {
+	//Các chức năng cập nhật
+	public boolean add();
+	public boolean edit();
+	public boolean del();
+	
+	//Các chức năng lấy dũư liệu
+	public ResultSet get(int id);
+	public ResultSet get(String name, String pass);
+	public ResultSet gets(int id);
+	
+}

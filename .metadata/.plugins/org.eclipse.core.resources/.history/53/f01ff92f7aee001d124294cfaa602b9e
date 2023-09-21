@@ -1,0 +1,16 @@
+package jsoft.ads.article;
+
+import jsoft.ads.category.Category;
+import jsoft.objcets.*;
+import java.sql.*;
+
+public interface Article {
+	//Các chức năng cập nhật
+	public boolean addArticle(ArticleOject item);
+	public boolean editArticle(ArticleOject item);
+	public boolean delArticle(ArticleOject item);
+	
+	//Các chức năng lấy dũư liệu
+	public ResultSet getArticle(short id);
+	public ResultSet getArticle(ArticleOject similar, int at, byte total);
+}

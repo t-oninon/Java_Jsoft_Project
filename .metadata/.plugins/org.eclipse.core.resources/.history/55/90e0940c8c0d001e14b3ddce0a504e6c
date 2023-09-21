@@ -1,0 +1,60 @@
+package jsoft.ads.user;
+
+import jsoft.*;
+import jsoft.objects.*;
+
+import java.util.ArrayList;
+
+import org.javatuples.*;
+
+public class UserLibrary {
+	public static String viewUser(ArrayList<UserObject> items) {
+		StringBuilder tmp = new StringBuilder();
+		
+		tmp.append("<div class=\"card\">");
+		tmp.append("<div class=\"card-body\">");
+		//tmp.append("<h5 class=\"card-title\">Table with stripped rows</h5>\n");
+		tmp.append("<table class=\"table table-striped\">");
+		tmp.append("<thead>");
+		tmp.append("<tr>");
+		tmp.append("<th scope=\"col\">STT</th>");
+		tmp.append("<th scope=\"col\">Ngày tạo</th>");
+		tmp.append("<th scope=\"col\">Tài khoản</th>");
+		tmp.append("<th scope=\"col\">Họ tên</th>");
+		tmp.append("<th scope=\"col\">Hộp thư</th>");
+		tmp.append("<th scope=\"col\">Lần đăng nhập</th>");
+		tmp.append("<th scope=\"col\">ID</th>");
+		tmp.append("<th scope=\"col\" colspan=\"3\">Thực hiện</th>");
+		tmp.append("</tr>");
+		tmp.append("</thead>\n");
+		
+		tmp.append("<tbody>");
+		items.forEach(item -> {
+			tmp.append("<tr>");
+			tmp.append("<th scope=\"row\">"+(items.indexOf(item)+1)+"</th>");
+			tmp.append("<td>"+item.getUser_created_date()+"</td>");
+			tmp.append("<td>"+item.getUser_name()+"</td>");
+			tmp.append("<td>"+item.getUser_fullname()+"</td>");
+			tmp.append("<td>"+item.getUser_email()+"</td>");
+			tmp.append("<td>"+item.getUser_logined()+"</td>");
+			tmp.append("<th scope=\"row\">"+item.getUser_id()+"</th>");
+			tmp.append("<td>Chi tiết</td>");
+			tmp.append("<td>Sửa</td>");
+			tmp.append("<td>Xóa</td>");
+			tmp.append("</tr>\n");
+		});
+		
+		
+		tmp.append("</tbody>");
+		tmp.append("</table>");
+		
+		
+		tmp.append("</div>");
+		tmp.append("</div>");
+		return tmp.toString();
+	}
+	public UserLibrary() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

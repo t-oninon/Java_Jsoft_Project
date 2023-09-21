@@ -1,0 +1,15 @@
+package jsoft.ads.section;
+
+import jsoft.objcets.*;
+import java.sql.*;
+
+public interface Section {
+	//Các chức năng cập nhật
+	public boolean addSection(SectionObject item);
+	public boolean editSection(SectionObject item);
+	public boolean delSection(SectionObject item);
+
+	//Các chức năng lấy dũư liệu
+	public ResultSet getSection(short id);
+	public ResultSet getUsers(SectionObject similar, int at, byte total);
+}

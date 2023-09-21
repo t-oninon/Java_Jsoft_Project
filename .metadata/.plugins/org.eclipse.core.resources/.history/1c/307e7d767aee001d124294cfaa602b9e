@@ -1,0 +1,15 @@
+package jsoft.ads.category;
+
+import jsoft.objcets.*;
+import java.sql.*;
+
+public interface Category {
+	//Các chức năng cập nhật
+	public boolean addCategory(CategoryOject item);
+	public boolean editCategory(CategoryOject item);
+	public boolean delCategory(CategoryOject item);
+	
+	//Các chức năng lấy dũư liệu
+	public ResultSet getCategory(short id);
+	public ResultSet getCategory(CategoryOject similar, int at, byte total);
+}

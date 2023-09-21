@@ -1,0 +1,14 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="objects.Person"><rhs name\="objects.Student"/><rhs name\="objects.Employee"/></lhs><lhs name\="objects.Student"><rhs name\="objects.Student"/></lhs><lhs name\="objects.Employee"><rhs name\="objects.Employee"/></lhs><lhs name\="objects.Manager"><rhs name\="objects.StudentManager"/><rhs name\="objects.EmployeeManager"/></lhs><lhs name\="objects.StudentManager"><rhs name\="objects.StudentManager"/></lhs><lhs name\="objects.EmployeeManager"><rhs name\="objects.EmployeeManager"/></lhs><lhs name\="jsoft.ConnectionPool"><rhs name\="jsoft.ConnectionPoolImpl"/></lhs><lhs name\="org.javatuples.valueintf.IValue0"><rhs name\="org.javatuples.Triplet"/></lhs><lhs name\="org.javatuples.valueintf.IValue1"><rhs name\="org.javatuples.Triplet"/></lhs><lhs name\="org.javatuples.valueintf.IValue2"><rhs name\="org.javatuples.Triplet"/></lhs><lhs name\="org.javatuples.Tuple"><rhs name\="org.javatuples.Triplet"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="org.javatuples.Triplet"/></lhs><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.lang.AbstractStringBuilder"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.lang.Appendable"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="jsoft.ads.user.User"><rhs name\="jsoft.ads.user.UserImpl"/></lhs><lhs name\="jsoft.ads.section.Section"><rhs name\="jsoft.ads.section.SectionImpl"/></lhs><lhs name\="jsoft.objects.SectionObject"><rhs name\="jsoft.objects.SectionObject"/><rhs name\="jsoft.objects.ArticleObject"/></lhs><lhs name\="jsoft.objects.CategoryObject"><rhs name\="jsoft.objects.ArticleObject"/></lhs><lhs name\="jsoft.objects.ArticleObject"><rhs name\="jsoft.objects.ArticleObject"/></lhs><lhs name\="jsoft.ads.user.UserControl"><rhs name\="jsoft.ads.user.UserControl"/></lhs></history>
+content_assist_number_of_computers=17
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=1
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.PackagesView.viewState=1
+org.eclipse.jdt.ui.browsing.packagestoeditor=false
+org.eclipse.jdt.ui.formatterprofiles.version=22
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

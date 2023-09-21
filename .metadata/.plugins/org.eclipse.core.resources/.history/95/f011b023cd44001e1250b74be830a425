@@ -1,0 +1,93 @@
+package jsoft.ads.section;
+
+import java.util.ArrayList;
+import jsoft.objects.*;
+
+public class SectionLibrary {
+	public static String viewSections(ArrayList<SectionObject> items) {
+		StringBuilder tmp = new StringBuilder();
+		
+		tmp.append("<div class=\"card\">");
+		tmp.append("<div class=\"card-body\">");
+		//tmp.append("<h5 class=\"card-title\">Table with stripped rows</h5>\n");
+		tmp.append("<table class=\"table table-striped\">");
+		tmp.append("<thead>");
+		tmp.append("<tr>");
+		tmp.append("<th scope=\"col\">STT</th>");
+		tmp.append("<th scope=\"col\">Tên Section</th>");
+		tmp.append("<th scope=\"col\">Ghi chú</th>");
+		tmp.append("<th scope=\"col\">ID</th>");
+		tmp.append("<th scope=\"col\" colspan=\"3\">Thực hiện</th>");
+		tmp.append("</tr>");
+		tmp.append("</thead>\n");
+		
+		tmp.append("<tbody>");
+		items.forEach(item -> {
+			tmp.append("<tr>");
+			tmp.append("<th scope=\"row\">"+(items.indexOf(item)+1)+"</th>");
+			tmp.append("<td>"+item.getSection_name()+"</td>");
+			tmp.append("<td>"+item.getSection_notes()+"</td>");
+			tmp.append("<td>"+item.getSection_id()+"</td>");
+			tmp.append("<td>Chi tiết</td>");
+			tmp.append("<td>Sửa</td>");
+			tmp.append("<td>Xóa</td>");
+			tmp.append("</tr>\n");
+		});
+		
+		
+		tmp.append("</tbody>");
+		tmp.append("</table>");
+		
+		
+		tmp.append("</div>");
+		tmp.append("</div>");
+		return tmp.toString();
+	}
+	
+	public static ArrayList<String> viewSections(ArrayList<SectionObject> items) {
+		ArrayList<String>hah = new ArrayList<>();
+		
+		StringBuilder tmp = new StringBuilder();
+		
+		tmp.append("<div class=\"card\">");
+		tmp.append("<div class=\"card-body\">");
+		//tmp.append("<h5 class=\"card-title\">Table with stripped rows</h5>\n");
+		tmp.append("<table class=\"table table-striped\">");
+		tmp.append("<thead>");
+		tmp.append("<tr>");
+		tmp.append("<th scope=\"col\">STT</th>");
+		tmp.append("<th scope=\"col\">Tên Section</th>");
+		tmp.append("<th scope=\"col\">Ghi chú</th>");
+		tmp.append("<th scope=\"col\">ID</th>");
+		tmp.append("<th scope=\"col\" colspan=\"3\">Thực hiện</th>");
+		tmp.append("</tr>");
+		tmp.append("</thead>\n");
+		
+		tmp.append("<tbody>");
+		items.forEach(item -> {
+			tmp.append("<tr>");
+			tmp.append("<th scope=\"row\">"+(items.indexOf(item)+1)+"</th>");
+			tmp.append("<td>"+item.getSection_name()+"</td>");
+			tmp.append("<td>"+item.getSection_notes()+"</td>");
+			tmp.append("<td>"+item.getSection_id()+"</td>");
+			tmp.append("<td>Chi tiết</td>");
+			tmp.append("<td>Sửa</td>");
+			tmp.append("<td>Xóa</td>");
+			tmp.append("</tr>\n");
+		});
+		
+		
+		tmp.append("</tbody>");
+		tmp.append("</table>");
+		
+		
+		tmp.append("</div>");
+		tmp.append("</div>");
+		return hah.add(tmp.toString());
+	}
+	
+	public SectionLibrary() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
