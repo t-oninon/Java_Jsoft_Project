@@ -1,1 +1,2 @@
-# Java_Jsoft_Project
+# Dự án học viên của JSoft
+
